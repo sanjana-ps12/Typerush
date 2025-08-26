@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#theme-toggle {
+  background: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+#quote-box {
+  margin-bottom: 20px;
+  background-color: #ffffff22;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  min-height: 100px;
+}
+
+textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+#stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+#stats p {
+  margin-bottom: 10px;
+  flex: 1 1 40%;
+}
+
+#medal {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#restart-btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  background-color: #00d2ff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#restart-btn:hover {
+  background-color: #3a7bd5;
+}
+body.dark {
+  background: linear-gradient(135deg, #000000, #434343);
+  color: #f5f5f5;
+}
+
+body.dark #quote-box,
+body.dark main {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark textarea {
+  background-color: #222;
+  color: white;
+}
+
+body.dark #restart-btn {
+  background-color: #333;
+}
+
+body.dark #restart-btn:hover {
+  background-color: #555;
+}
+
+body.dark #theme-toggle {
+  background-color: #fff;
+  color: black;
+}
+
+textarea {
+  font-family: 'Courier New', monospace;
+}
+
+.correct {
+  color: green;
+  background-color: #e6ffe6;
+}
+.incorrect {
+  color: red;
+  background-color: #ffe6e6;
+  text-decoration: underline;
+  font-weight: bold;
+}
