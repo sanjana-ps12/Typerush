@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typing Speed Tester</title>
+  <link rel="stylesheet" href="typerush.css" />
+</head>
+<body>
+  <canvas id="confetti-canvas"></canvas>
+
+  <header>
+    <h1>Typing Speed Tester</h1>
+    <button id="theme-toggle">Toggle Theme</button>
+  </header>
+
+  <main>
+    <div id="quote-box"></div>
+    <textarea id="input" rows="4" placeholder="Start typing here..."></textarea>
+
+    <div id="stats">
+      <p>Time: <span id="time">0</span>s</p>
+      <p>Words: <span id="words">0</span></p>
+      <p>WPM: <span id="wpm">0</span></p>
+      <p>Errors: <span id="errors">0</span></p>
+    </div>
+
+    <div id="medal"></div>
+
+    <div id="buttons">
+      <button id="restart-btn">Restart</button>
+    </div>
+  </main>
+
+  <script src="typerush.js"></script>
+</body>
+</html>
